@@ -41,15 +41,17 @@
 
     bookList.addEventListener('dblclick', function (event) {
       event.preventDefault();
-      if (event.target.offsetParent.classList.contains('.book__image')) {
-        const bookId = event.target.getAttribute(select.book.image_id);
-        if (!event.target.classList.contains('favorite')) {
-          event.tagret.classList.add('favorite');
+      if (event.target.offsetParent.classList.contains('book__image')) {
+        console.log('favorite', event.target);
+        const favorite = event.target.offsetParent.classList;
+        const bookId = favorite.getAttribute(select.book.image_id);
+        if (!favorite.classList.contains('favorite')) {
+          favorite.classList.add('favorite');
           //console.log('favorite', favorite);
           favoriteBooks.push(bookId);
         }
         else {
-          event.target.classList.remove('favorite');
+          favorite.classList.remove('favorite');
           const indexOfFavorite = favoriteBooks.indexOf(bookId);
           favoriteBooks.splice(indexOfFavorite, 1);
         }
