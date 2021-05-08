@@ -5,3 +5,11 @@ utils.createDOMFromHTML = function(htmlString) {
   div.innerHTML = htmlString.trim();
   return div.firstChild;
 };
+
+/*Handlebars.registerHelper('ratingWidth', function(ratingWidth) {
+  return ratingWidth;
+});
+Handlebars.registerHelper('ratingBgc', function(ratingBgc) {
+  return ratingBgc;
+});*/
+
