@@ -6,10 +6,4 @@ utils.createDOMFromHTML = function(htmlString) {
   return div.firstChild;
 };
 
-/*Handlebars.registerHelper('ratingWidth', function(ratingWidth) {
-  return ratingWidth;
-});
-Handlebars.registerHelper('ratingBgc', function(ratingBgc) {
-  return ratingBgc;
-});*/
 
